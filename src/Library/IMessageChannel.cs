@@ -2,6 +2,10 @@ namespace Library
 {
     public interface IMessageChannel
     {
-         void Send(Message message);
+    static void Send(Message message)
+    {
+        
+    }
+
     }
 }

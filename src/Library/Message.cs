@@ -2,7 +2,7 @@ namespace Library
 {
     public class Message
     {
-        protected Message(string from, string to)
+        protected Message(Phonebook from, string[] to)
         {
             this.From = from;
             this.To = to;
@@ -10,8 +10,8 @@ namespace Library
 
         public string Text { get; set; }
 
-        public string From { get; }
+        public Phonebook From { get; }
 
-        public string To { get; }
+        public string[] To { get; }
     }
 }

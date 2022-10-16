@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using TwitterUCU;
+using WhatsAppApiUCU;
 
 namespace Library
 {
@@ -10,6 +12,11 @@ namespace Library
         {
             this.Owner = owner;
             this.persons = new List<Contact>();
+        }
+
+        public void AddContact(Contact contact)
+        {
+            persons.Add(contact);
         }
 
         public Contact Owner { get; }
